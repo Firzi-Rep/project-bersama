@@ -208,13 +208,8 @@ html {
 
 #formulir-box .formulir .x {
   display: block;
-<<<<<<< HEAD
-  margin: auto;
-  margin-bottom: 100%;
-=======
   position: absolute;
   top: 5%;
->>>>>>> jaya
   text-align: center;
   align-items: center;
   text-align: center;
