@@ -10,21 +10,28 @@ html {
 
 .kotak-utama {
   display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: auto;
   margin-top: 10vh;
   padding: 1%;
-  width: 96%;
-  height: 50vh;
+  width: 95%;
+  height: auto;
   background-color: #f7db6a;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .kotak-profil {
   display: flex;
   flex-wrap: wrap;
-  width: 80vh;
-  height: 30vh;
+  width: 60vh;
+  height: auto;
   background-color: white;
-  margin: 5%;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
 }
 
 .profil {
@@ -33,6 +40,18 @@ html {
 }
 
 .profil img {
-  width: 24vh;
-  padding: 5%;
+  width: 18vh;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.profil table {
+  height: 10rem;
+  margin: auto;
+  margin-left: 2rem;
+}
+
+.profil table tr td span {
+  font-weight: bold;
+  padding-right: 1rem;
 }
