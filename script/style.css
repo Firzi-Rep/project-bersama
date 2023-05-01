@@ -73,14 +73,14 @@ html {
   bottom: 2%;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   transition: 0.5s;
 }
 
-.from-add img {
+.from-add .animasi {
   position: relative;
   width: 25vh;
   animation: goyang 3s infinite;
+  cursor: pointer;
 }
 
 @keyframes goyang {
@@ -95,11 +95,98 @@ html {
   }
 }
 
-.from-add div {
+.from-add .latar {
   position: fixed;
   width: 25vh;
   height: 9vh;
   background-color: rgb(67, 29, 0);
   border-radius: 100px;
+  box-shadow: 5px 5px 5px black;
   bottom: 2%;
+}
+
+#formulir-box {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.243);
+  z-index: 2;
+  visibility: hidden;
+  transition: 1s;
+}
+
+#formulir-box.daftar-isi {
+  visibility: visible;
+}
+
+#formulir-box .formulir {
+  display: flexbox;
+  margin: auto;
+  width: 80vh;
+  height: 90vh;
+  z-index: 10;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+}
+
+#formulir-box .formulir h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+#formulir-box .formulir img {
+  display: block;
+  width: 30vh;
+  height: 40vh;
+  background-color: rgb(99, 99, 99);
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+#formulir-box .formulir table {
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+#formulir-box .formulir table tr td {
+  padding-bottom: 7px;
+}
+
+#formulir-box .formulir table tr td span {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#formulir-box .formulir .submit {
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  width: 15vh;
+  height: 4vh;
+  border-radius: 15px;
+  background-color: rgb(0, 255, 0);
+  box-shadow: 5px 5px 5px black;
+}
+
+#formulir-box .formulir .submit:hover {
+  background-color: rgb(0, 172, 0);
+}
+
+#formulir-box .formulir .x {
+  display: block;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
 }
