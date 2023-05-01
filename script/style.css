@@ -115,7 +115,6 @@ html {
   background-color: rgba(0, 0, 0, 0.243);
   z-index: 2;
   visibility: hidden;
-  transition: 1s;
 }
 
 #formulir-box.daftar-isi {
@@ -183,6 +182,7 @@ html {
 #formulir-box .formulir .x {
   display: block;
   margin: auto;
+  margin-bottom: 100%;
   text-align: center;
   align-items: center;
   text-align: center;
