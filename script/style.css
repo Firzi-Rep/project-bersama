@@ -103,3 +103,26 @@ html {
   border-radius: 100px;
   bottom: 2%;
 }
+
+.box1212, .circle {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100px;
+  height:100px;
+  background:#47a1b7;
+  margin:10px;
+  text-align:center;
+}
+
+.circle {
+  border-radius:50%;
+}
+
+.blue {
+  background:#253335;
+}
+
+.orange {
+  background:orange;
+}

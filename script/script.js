@@ -80,3 +80,7 @@
         addEmailToContacts(value);
         }
     })
+
+    const boxes = document.getElementsByClassName("kotak-profil");
+    boxes[0].setAttribute("class", "profil");
+
