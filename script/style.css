@@ -105,29 +105,6 @@ html {
   bottom: 2%;
 }
 
-<<<<<<< HEAD
-.box1212, .circle {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:100px;
-  height:100px;
-  background:#47a1b7;
-  margin:10px;
-  text-align:center;
-}
-
-.circle {
-  border-radius:50%;
-}
-
-.blue {
-  background:#253335;
-}
-
-.orange {
-  background:orange;
-=======
 #formulir-box {
   display: flex;
   position: fixed;
@@ -212,5 +189,4 @@ html {
   width: 30px;
   height: 30px;
   font-weight: bold;
->>>>>>> main
 }
