@@ -19,6 +19,7 @@ html {
   width: 95%;
   height: auto;
   background-color: #f7db6a;
+  border: 1px solid black;
   border-radius: 15px;
   box-shadow: 5px 5px 5px black;
 }
@@ -32,6 +33,11 @@ html {
   margin: 1rem;
   border-radius: 10px;
   box-shadow: 3px 3px 5px black;
+  transition: 1s;
+}
+
+.kotak-profil:hover {
+  background-color: #dfff8d;
 }
 
 .profil {
