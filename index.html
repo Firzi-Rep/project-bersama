@@ -7,13 +7,8 @@
         <title>Project Bersama</title>
         <link rel="stylesheet" href="./script/style.css">
         <link rel="stylesheet" href="./framework/css/bootstrap.css">
-        <link rel="stylesheet"
-            href="./framework/node_modules/jq-fakeloader/demo/css/demo.css">
-        <link rel="stylesheet"
-            href="/framework/node_modules/jq-fakeloader/demo/css/fakeLoader.min.css">
     </head>
     <body class="bg-primary">
-        <div class="fakeLoader"></div>
 
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-light">
@@ -30,7 +25,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="index.html">Home</a>
+                                href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -39,17 +34,10 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search" style="width: 300px;">
-                        <input class="form-control" list="datalistOptions"
-                            id="exampleDataList" placeholder="Type to
-                            search...">
-                        <datalist id="datalistOptions">
-                            <option value="Userganteng">
-                            </option><option value="User">
-                            </option><option value="User1">
-                            </option><option value="User2">
-                            </option><option value="User3">
-                            </option></datalist>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -226,31 +214,39 @@
         <!-- Kotak Data End -->
 
         <!-- From Add Start-->
-            <div class="from-add">
-                <div id="formulir-box" class="">
-                    <div class="formulir">
-                        <h1>Form Register</h1>
-                        <img class="fake-img" src="" alt="">
-                        <form class="text-center">
-                            <div>
-                                <label for="name">Name</label>
-                                <input type="text" name="Name-Name">
-                            </div>
-                            <div>
-                                <label for="name">Kelas</label>
-                                <input type="text" name="Kelas">
-                            </div>
-                            <button class="submit" type="submit">Submit</button>
-                        </form>
-                        
-                        <button class="x" onclick="formulir()">X</button>
-                    </div>
+        <div class="from-add">
+            <div id="formulir-box" class="">
+                <div class="formulir">
+                    <h1>Form Register</h1>
+                    <img class="fake-img" src="" alt="">
+
+                    <table>
+                        <tr>
+                            <td><span>Nama</span></td>
+                            <td>:&nbsp;&nbsp;</td>
+                            <td><input type="text" placeholder="Username"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Kelas</span></td>
+                            <td>:&nbsp;&nbsp;</td>
+                            <td><input type="text" placeholder="Kelas"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Umur</span></td>
+                            <td>:&nbsp;&nbsp;</td>
+                            <td><input type="text" placeholder="Umur"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Kota</span></td>
+                            <td>:&nbsp;&nbsp;</td>
+                            <td><input type="text" placeholder="Kota
+                                    tinggal"></td>
+                        </tr>
+                    </table><button class="submit">Submit</button>
+                    <button class="x" onclick="formulir()">X</button>
                 </div>
-                <div class="latar"></div>
-                <a href="#" onclick="formulir()"><img class="animasi"
-                        src="./assets/img/add.png" alt=""></a>
             </div>
-        
+        </div>
         <!-- From Add End -->
 
 
@@ -276,22 +272,6 @@
         </footer>
         <!-- footer end -->
 
-        <script src="./script/script.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-        <script src="/script/script.js"></script>
         <script src="/framework/js/bootstrap.min.js"></script>
-        <script
-            src="/framework/node_modules/jq-fakeloader/demo/js/fakeLoader.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $.fakeLoader({
-                    timeToHide:2000,
-                    bgColor:"#D864A9",
-                    spinner:"spinner3"
-                });
-            });
-        </script>
-        <div class="fakeLoader"></div>
     </body>
 </html>
