@@ -57,3 +57,26 @@
         }, settings.timeToHide);
     }; 
 }(jQuery));
+
+    var contacts = ["jaya"],
+    ul = document.querySelectorAll('.name-list')[0];
+
+    for (var i = 0; i < contacts.length; i++) {
+        addEmailToContacts(contacts[i]);
+    }
+
+    function addEmailToContacts(contact) {
+    var li = document.createElement('tr');
+        li.innerHTML = contact;
+
+        ul.appendChild(li);
+    };
+
+    document.querySelector('#submit').addEventListener('click', function(e) {
+        e.preventDefault();
+        // Get the value
+        var value = document.querySelectorAll('input[type="mail"]')[0].value;
+        if (value) {
+        addEmailToContacts(value);
+        }
+    })
