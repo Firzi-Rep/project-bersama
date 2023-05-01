@@ -114,7 +114,7 @@ html {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.243);
   z-index: 2;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 #formulir-box.daftar-isi {
