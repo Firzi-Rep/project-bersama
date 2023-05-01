@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.kotak-utama {
+  display: flex;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 1%;
+  width: 96%;
+  height: 50vh;
+  background-color: #f7db6a;
+}
+
+.kotak-profil {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vh;
+  height: 30vh;
+  background-color: white;
+  margin: 5%;
+}
+
+.profil {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profil img {
+  width: 24vh;
+  padding: 5%;
+}
