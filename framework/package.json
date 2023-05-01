@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "jq-fakeloader": "^2.0.1"
+  }
+}

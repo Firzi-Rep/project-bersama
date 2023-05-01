@@ -7,8 +7,13 @@
         <title>Project Bersama</title>
         <link rel="stylesheet" href="./script/style.css">
         <link rel="stylesheet" href="./framework/css/bootstrap.css">
+        <link rel="stylesheet"
+            href="./framework/node_modules/jq-fakeloader/demo/css/demo.css">
+        <link rel="stylesheet"
+            href="/framework/node_modules/jq-fakeloader/demo/css/fakeLoader.min.css">
     </head>
     <body class="bg-primary">
+        <div class="fakeLoader"></div>
 
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-light">
@@ -25,7 +30,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#">Home</a>
+                                href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -34,10 +39,17 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    <form class="d-flex" role="search" style="width: 300px;">
+                        <input class="form-control" list="datalistOptions"
+                            id="exampleDataList" placeholder="Type to
+                            search...">
+                        <datalist id="datalistOptions">
+                            <option value="Userganteng">
+                            </option><option value="User">
+                            </option><option value="User1">
+                            </option><option value="User2">
+                            </option><option value="User3">
+                            </option></datalist>
                     </form>
                 </div>
             </div>
@@ -273,7 +285,23 @@
             </div>
         </footer>
         <!-- footer end -->
+
         <script src="./script/script.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+        <script src="/script/script.js"></script>
         <script src="/framework/js/bootstrap.min.js"></script>
+        <script
+            src="/framework/node_modules/jq-fakeloader/demo/js/fakeLoader.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $.fakeLoader({
+                    timeToHide:2000,
+                    bgColor:"#D864A9",
+                    spinner:"spinner3"
+                });
+            });
+        </script>
+        <div class="fakeLoader"></div>
     </body>
 </html>
