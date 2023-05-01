@@ -1,7 +1,6 @@
 function formulir() {
   document.getElementById("formulir-box").classList.toggle("daftar-isi");
 }
-<<<<<<< HEAD
 (function ($) {
   $.fakeLoader = function (options) {
     var settings = $.extend(
@@ -69,13 +68,3 @@ function formulir() {
     }, settings.timeToHide);
   };
 })(jQuery);
-=======
-
-const form = document.querySelector("form");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const fd = new FormData(form);
-  console.log(fd);
-});
->>>>>>> 81101bda56f2ce6fcc13a4ea4d2133c50befa2d9
