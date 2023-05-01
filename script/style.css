@@ -15,6 +15,7 @@ html {
   flex-wrap: wrap;
   margin: auto;
   margin-top: 10vh;
+  margin-bottom: 2rem;
   padding: 1%;
   width: 95%;
   height: auto;
@@ -60,4 +61,45 @@ html {
 .profil table tr td span {
   font-weight: bold;
   padding-right: 1rem;
+}
+
+/* From Add */
+
+.from-add {
+  display: flexbox;
+  position: fixed;
+  z-index: 99;
+  right: 1%;
+  bottom: 2%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.from-add img {
+  position: relative;
+  width: 25vh;
+  animation: goyang 3s infinite;
+}
+
+@keyframes goyang {
+  10% {
+    rotate: 20deg;
+  }
+  20% {
+    rotate: -10deg;
+  }
+  30% {
+    rotate: 0deg;
+  }
+}
+
+.from-add div {
+  position: fixed;
+  width: 25vh;
+  height: 9vh;
+  background-color: rgb(67, 29, 0);
+  border-radius: 100px;
+  bottom: 2%;
 }
