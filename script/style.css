@@ -8,6 +8,28 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.navbar-collapse ul {
+  margin-left: 1rem;
+}
+
+.navbar-collapse ul li {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.navbar-collapse ul li:hover {
+  background-color: #126a00;
+  box-shadow: 2px 2px 3px black;
+}
+
 .kotak-utama {
   display: flex;
   justify-content: space-between;
@@ -81,6 +103,11 @@ html {
   width: 25vh;
   animation: goyang 3s infinite;
   cursor: pointer;
+  transition: 1s;
+}
+
+.from-add .animasi:hover {
+  width: 100vh;
 }
 
 @keyframes goyang {
@@ -97,7 +124,7 @@ html {
 
 .from-add .latar {
   position: fixed;
-  width: 25vh;
+  width: 100vh;
   height: 9vh;
   background-color: rgb(67, 29, 0);
   border-radius: 100px;
@@ -181,8 +208,13 @@ html {
 
 #formulir-box .formulir .x {
   display: block;
+<<<<<<< HEAD
   margin: auto;
   margin-bottom: 100%;
+=======
+  position: absolute;
+  top: 5%;
+>>>>>>> jaya
   text-align: center;
   align-items: center;
   text-align: center;
