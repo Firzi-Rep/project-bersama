@@ -7,9 +7,10 @@
         <title>Project Bersama</title>
         <link rel="stylesheet" href="./script/style.css">
         <link rel="stylesheet" href="./framework/css/bootstrap.css">
-        <link rel="stylesheet" href="./framework/node_modules/jq-fakeloader/demo/css/demo.css">
-        <link rel="stylesheet" href="/framework/node_modules/jq-fakeloader/demo/css/fakeLoader.min.css">
-
+        <link rel="stylesheet"
+            href="./framework/node_modules/jq-fakeloader/demo/css/demo.css">
+        <link rel="stylesheet"
+            href="/framework/node_modules/jq-fakeloader/demo/css/fakeLoader.min.css">
     </head>
     <body class="bg-primary">
         <div class="fakeLoader"></div>
@@ -39,14 +40,16 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search" style="width: 300px;">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                        <input class="form-control" list="datalistOptions"
+                            id="exampleDataList" placeholder="Type to
+                            search...">
                         <datalist id="datalistOptions">
-                        <option value="Userganteng">
-                        </option><option value="User">
-                        </option><option value="User1">
-                        </option><option value="User2">
-                        </option><option value="User3">
-                        </option></datalist>
+                            <option value="Userganteng">
+                            </option><option value="User">
+                            </option><option value="User1">
+                            </option><option value="User2">
+                            </option><option value="User3">
+                            </option></datalist>
                     </form>
                 </div>
             </div>
@@ -225,10 +228,31 @@
         <!-- Kotak Data End -->
 
         <!-- From Add Start-->
-        <div class="from-add">
-            <div></div>
-            <img src="./assets/img/add.png" alt="">
-        </div>
+            <div class="from-add">
+                <div id="formulir-box" class="">
+                    <div class="formulir">
+                        <h1>Form Register</h1>
+                        <img class="fake-img" src="" alt="">
+                        <form class="text-center">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" name="Name-Name">
+                            </div>
+                            <div>
+                                <label for="name">Kelas</label>
+                                <input type="text" name="Kelas">
+                            </div>
+                            <button class="submit" type="submit">Submit</button>
+                        </form>
+                        
+                        <button class="x" onclick="formulir()">X</button>
+                    </div>
+                </div>
+                <div class="latar"></div>
+                <a href="#" onclick="formulir()"><img class="animasi"
+                        src="./assets/img/add.png" alt=""></a>
+            </div>
+        
         <!-- From Add End -->
 
 
@@ -254,10 +278,13 @@
         </footer>
         <!-- footer end -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+        <script src="./script/script.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
         <script src="/script/script.js"></script>
         <script src="/framework/js/bootstrap.min.js"></script>
-        <script src="/framework/node_modules/jq-fakeloader/demo/js/fakeLoader.min.js"></script>
+        <script
+            src="/framework/node_modules/jq-fakeloader/demo/js/fakeLoader.min.js"></script>
         <script>
             $(document).ready(function(){
                 $.fakeLoader({
