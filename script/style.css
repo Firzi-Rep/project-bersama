@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.logo {
+  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
+}
+
 .navbar {
   border: 1px solid black;
   box-shadow: 5px 5px 5px black;
